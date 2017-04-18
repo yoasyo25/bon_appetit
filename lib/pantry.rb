@@ -7,22 +7,19 @@ class Pantry
   end
 
   def stock_check(item)
-    @stock[item]
+    stock[item]
   end
 
   def restock(item, amount)
-    if @stock[item]
-      @stock[item] += amount
+    if stock[item]
+      stock[item] += amount
     else
-      @stock[item] = amount
+      stock[item] = amount
     end
   end
 
   def add_to_shopping_list(recipe)
-    @shopping_list[recipe.name] = recipe.ingredients
-
+    shopping_list[recipe.ingredient_types] = recipe.ingredients.values
   end
-
-
 
 end

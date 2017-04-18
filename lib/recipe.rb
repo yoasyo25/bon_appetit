@@ -7,15 +7,12 @@ class Recipe
   end
 
   def ingredient_types
-    @ingredients.keys
+    ingredients.keys
   end
 
   def add_ingredient(ingredient, amount)
-    @ingredients[ingredient] = amount
+    ingredients[ingredient] = amount
   end
 
-  def amount_required(ingredient_name)
-    @ingredients[ingredient_name]
-  end
 
 end
