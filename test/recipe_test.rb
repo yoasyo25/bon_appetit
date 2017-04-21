@@ -23,5 +23,7 @@ class RecipeTest < Minitest::Test
     assert_equal ({"Cheese" => 20, "Flour" => 20}), recipe.ingredients
   end
 
+  
+
 
 end
